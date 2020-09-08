@@ -12,9 +12,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
 
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/magnific-popup.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+
+    <link rel="stylesheet" href="./css/lightbox.min.css">
 
 </head>
 <body>
@@ -34,7 +37,7 @@
         </div>
     </header>
 
-    <div class="carousel">
+    <section class="carousel">
         <div class="swiper-container">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
@@ -75,12 +78,10 @@
             <div class="swiper-button-prev swiper-button-white"></div>
             <div class="swiper-button-next swiper-button-white"></div>
         
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
         </div>
-    </div>
+    </section>
 
-    <div class="about">
+    <section class="about">
         <h2>About</h2>
         <div class="about__content">
             <div class="about__item">
@@ -100,10 +101,9 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed odio consequat, tristique elit sed, molestie nulla. Mauris et quam leo. Quisque tincidunt facilisis rutrum. Etiam mattis arcu vitae velit sagittis vehicula. Duis posuere ex in mollis iaculis. Suspendisse tincidunt ut velit id euismod.vulputate turpis porta ex sodales, dignissim hendrerit eros sagittis. Curabitur lacinia dui ut luctus congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis</p>
             </div>
         </div>
-    </div>
+    </section>
 
-
-    <div class="stats">
+    <section class="stats">
         <h2>Stats</h2>
         <div class="stats__content">
             
@@ -124,45 +124,208 @@
                 <p>Likes</p>
             </div>
         </div>
-    </div>
+    </section>
 
-
-
-    <div class="blog">
+    <section class="blog">
         <h2>Blog</h2>
         <div class="blog__content">
             <div class="blog__item">
                 <img src="./images/g1.jpg" alt="">
-                <a href="">Lorem Ipsum Passage,</a>
+                <a href="#test-popup" class="open-popup-link" data-effect="mfp-move-from-top">Lorem Ipsum Passage,</a>
                 <p>
                     At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-                <a href="">Read more..</a>
+                <a href="#test-popup" class="open-popup-link" id="button">Read more..</a>
             </div>
             <div class="blog__item">
                 <img src="./images/g2.jpg" alt="">
-                <a href="">Lorem Ipsum Passage,</a>
+                <a href="#test-popup" class="open-popup-link">Lorem Ipsum Passage,</a>
                 <p>
                     At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-                <a href="">Read more..</a>
+                <a href="#test-popup" class="open-popup-link" id="button">Read more..</a>
             </div>
             <div class="blog__item">
                 <img src="./images/g1.jpg" alt="">
-                <a href="">Lorem Ipsum Passage,</a>
+                <a href="#test-popup" class="open-popup-link">Lorem Ipsum Passage,</a>
                     <p>
                     At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-                <a href="">Read more..</a>
+                <a href="#test-popup" class="open-popup-link" id="button">Read more..</a>
             </div>
         </div>
 
+        <div id="blog-popup" class="white-popup mfp-with-anim mfp-hide">
+            <div class="mfp-close-btn-in"></div>
+            <h3>Housing</h3>
+            <div class="popup__content">
+                <img src="./images/img2.jpg" alt="">
+                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p>
+            </div>
+        </div>
+        
 
+
+    </section>
+
+    <section class="more">
+        <div class="more__content">
+            <div class="more__left">
+                <a href="https://vimeo.com/106770833" class="video"><i class="fa fa-play-circle"></i></a>
+            </div>
+            <div class="more__right">
+                <h3>Get More..</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut minim veniam, labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p><br><br><br>
+                <a href="#test-popup" class="open-popup-link" id="button">Read more..</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio__content">
+        <div class="portfolio__item">
+            <a href="./images/img1.jpg" data-lightbox="portfolio">
+            <img src="./images/img1.jpg" alt="">
+            <div class="portfolio__text">
+                <h4>GALLERY</h4>
+                <p>Lorem Ipsum is simply dummy</p>
+            </div>
+        </a>
+        </div>
+        <div class="portfolio__item">
+            <a href="./images/img2.jpg" data-lightbox="portfolio">
+            <img src="./images/img2.jpg" alt="">
+            <div class="portfolio__text">
+            <h4>GALLERY</h4>
+            <p>Lorem Ipsum is simply dummy</p>
+            </div>
+        </a>
     </div>
-    <div class="more"></div>
-    <div class="portfolio"></div>
-    <div class="subcribe"></div>
-    <div class="agents"></div>
-    <div class="address"></div>
-    <div class="contact"></div>
-    <footer></footer>
+        <div class="portfolio__item">
+            <a href="./images/img3.jpg" data-lightbox="portfolio">
+            <img src="./images/img3.jpg" alt=""><div class="portfolio__text">
+            <h4>GALLERY</h4>
+            <p>Lorem Ipsum is simply dummy</p>
+        </div>
+    </a>
+</div>
+        <div class="portfolio__item">
+            <a href="./images/img4.jpg" data-lightbox="portfolio">
+            <img src="./images/img4.jpg" alt=""><div class="portfolio__text">
+            <h4>GALLERY</h4>
+            <p>Lorem Ipsum is simply dummy</p>
+        </div>
+    </a>
+    </div>
+        <div class="portfolio__item">
+            <a href="./images/img5.jpg" data-lightbox="portfolio">
+            <img src="./images/img5.jpg" alt=""><div class="portfolio__text">
+            <h4>GALLERY</h4>
+            <p>Lorem Ipsum is simply dummy</p>
+        </div>
+    </a>
+    </div>
+        <div class="portfolio__item">
+            <a href="./images/img6.jpg" data-lightbox="portfolio">
+            <img src="./images/img6.jpg" alt=""><div class="portfolio__text">
+            <h4>GALLERY</h4>
+            <p>Lorem Ipsum is simply dummy</p>
+        </div>
+    </a>
+</div>
+        </div>
+    </section>
+
+    <section class="subcribe">
+        <h2>Subcribe</h2>
+        <p>consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur. Ut enim ad minim <br> veniam, quis nostrud exercitation ullamco laboris nisi</p>
+        <form action="#" method="POST">
+            <input type="email" name="email" placeholder="Email" required><br>
+            <button>Click</button>
+        </form>
+    </section>
+
+    <section class="agents">
+        <h2>Our Agents</h2>
+        <div class="agents__content">
+            <div class="agents__item">
+                <img src="./images/t1.jpg" alt="">
+                <div class="agents__info">
+                    <h5>KAT WALLY</h5>
+                    <p>Lorem Ipsum</p>
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-rss"></i></a>
+                </div>
+            </div>
+            <div class="agents__item">
+                <img src="./images/t4.jpg" alt="">
+                <div class="agents__info">
+                    <h5>JOHN MAX</h5>
+                    <p>Lorem Ipsum</p>
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-rss"></i></a>
+                </div>
+            </div>
+            <div class="agents__item">
+                <img src="./images/t2.jpg" alt="">
+                <div class="agents__info">
+                    <h5>ROY KENT</h5>
+                    <p>Lorem Ipsum</p>
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-rss"></i></a>
+                </div>
+            </div>
+            <div class="agents__item">
+                <img src="./images/t3.jpg" alt="">
+                <div class="agents__info">
+                    <h5>JOY IDOSN</h5>
+                    <p>Lorem Ipsum</p>
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-rss"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="address">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31352.155726687626!2d106.63212250443117!3d10.809820785315644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed1f53481f5%3A0x366adde0d5174734!2sWhite%20Rabbit%20Amusement%20Park!5e0!3m2!1sen!2s!4v1599300765482!5m2!1sen!2s" width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </section>
+
+
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <form action="" class="contact__content">
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Last Name">
+            <input type="email" placeholder="Email">
+            <input type="tel" placeholder="Phone">
+            <textarea name="message" id="" cols="10" rows="5" placeholder="Message"></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+    <footer>
+        <div class="footer__content">
+            <div class="footer__left">
+                <p>&copy 2017 Housing. All Rights Reserved | Design by <a href="https://w3layouts.com/">W3layouts</a></p>
+            </div>
+            <div class="footer__right">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                    <li><a href="#"><i class="fab fa-vk"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+
+    <a href="#" class="cd-top text-replace js-cd-top backToTop">
+        <img src="./images/arrowup.png" alt="">
+    </a>
 
     <!-- Include script file -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
@@ -195,17 +358,67 @@
         delay: 5000,
         },
 
-        // And if we need scrollbar
-        scrollbar: {
-            el: '.swiper-scrollbar',
-        },
         })
+        
     </script>
 
      <!-- Thư viện hỗ trợ waypoints (xác định vị trí hiệu ứng) -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous"></script>
 
      <script src="./js/jquery.countup.min.js"></script>
-     
+
+    <!-- Thư viện hỗ trợ pop-up -->
+     <script src="./js/jquery.magnific-popup.min.js"></script>
+
+     <script>
+         $('.open-popup-link').magnificPopup({
+            items: [{
+                src: '#blog-popup',
+                type: 'inline',
+                closeBtnInside:true,
+                },
+                {
+                src: '#test-popup',
+                
+                removalDelay: 300,
+                callbacks: {
+                beforeOpen: function() {
+                this.st.mainClass = this.st.el.attr('data-effect');
+                    }
+                },
+                midClick: true
+            }]
+        });
+
+        $('.video').magnificPopup({
+        type: 'iframe',
+        
+        
+        iframe: {
+            patterns: {
+                vimeo: {
+                    index: 'vimeo.com/',
+                    id: '/',
+                    src: '//player.vimeo.com/video/%id%?autoplay=1'
+                    }
+            }
+        }
+        })
+     </script>
+
+     <!-- Thư viện Lightbox -->
+     <script src="./js/lightbox.min.js"></script>
+
+     <script>
+        lightbox.option({
+            
+            
+        })
+    </script>
+
+
+    <!-- Thư viện Back To Top -->
+    <script src="./js/util.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
